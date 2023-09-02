@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="initial upload">
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete">
+      <change afterPath="$PROJECT_DIR$/src/Program2/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Cube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Sphere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Tetrahedron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/ThreeDimensionalShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program2/TwoDimensionalShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program1/PieceWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program1/PieceWorker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Program2" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -81,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693692901270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Program1 Complete">
+      <created>1693693944912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693693944912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial upload" />
+    <MESSAGE value="Program1 Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete" />
   </component>
 </project>
