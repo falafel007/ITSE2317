@@ -56,11 +56,9 @@ public class Program1
 		 
       employees[3] = new BasePlusCommissionEmployee(
          "Bob", "Lewis", "444-44-4444", 5000, .04, 300);
-	/*
+
       employees[4] = new PieceWorker(
          "Rick", "Bridges", "555-55-5555", 2.25, 400);
-
-	 */
 
       System.out.println("Employees processed polymorphically:\n");
       
