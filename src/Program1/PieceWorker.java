@@ -1,4 +1,22 @@
-package Program1;
+package Program1;//********************************************************************
+//
+//  Developer:    Christopher Felleisen
+//
+//  Program #:    One
+//
+//  File Name:    PieceWorker.java
+//
+//  Course:       ITSE 2317 Intermediate Java Programming
+//
+//  Due Date:     9/15/2023
+//
+//  Instructor:   Prof. Fred Kumi
+//
+//  Chapter:      10
+//
+//  Description:  PieceWorker is an employee whose pay is based on the number of pieces of merchandise produced
+//
+//********************************************************************
 
 public class PieceWorker extends Employee {
 
