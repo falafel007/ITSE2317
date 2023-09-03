@@ -3,8 +3,9 @@ package Program2;
 public abstract class TwoDimensionalShape extends Shape {
 
     @Override
-    /**
-     * @return area and name of class, super class, and area
-     */
-    public String toString() {return "Two Dimensional Shape";};
+    public String toString() {
+        return String.format("Class: %s%nType: %s%nArea: %,.2f square units%n",
+                this.getClass().getName(), "Two Dimensional Shape", this.getArea());
+    }// end toString
+
 }
