@@ -13,11 +13,17 @@ public class Tetrahedron extends ThreeDimensionalShape {
     @Override
     public double getVolume() {
         return pow(this.edge, 3)/(6* sqrt(2));
-    }
+    } //end getVolume
 
     @Override
     public double getArea() {
         return sqrt(3) * pow(this.edge, 2);
-    }
+    } //end getArea
+
+    @Override
+    public String toString() {
+        return String.format("Shape: %s%nDimension: %s%nSurface Area: %,.2f square units%nVolume: %,.2f cubic units%n",
+                this.getClass().getName(), super.toString(), this.getArea(), this.getVolume());
+    } //end toString
 
 }

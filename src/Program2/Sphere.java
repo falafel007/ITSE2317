@@ -28,4 +28,10 @@ public class Sphere extends ThreeDimensionalShape {
         return 4.0/3 * this.base.getArea() * this.radius;
     } // end getVolume
 
+    @Override
+    public String toString() {
+        return String.format("Shape: %s%nDimension: %s%nSurface Area: %,.2f square units%nVolume: %,.2f cubic units%n",
+                this.getClass().getName(), super.toString(),  this.getArea(), this.getVolume());
+    } //end toString
+
 }
