@@ -5,6 +5,7 @@ public class Sphere extends ThreeDimensionalShape {
     private double radius;
     private Circle base;
 
+    // Constructor
     public Sphere(double radius) {
         this.radius = radius;
         this.base = new Circle(radius);
