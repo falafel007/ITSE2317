@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 Starting">
-      <change afterPath="$PROJECT_DIR$/src/DuplicateCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Program3.java" afterDir="false" />
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694742160859</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress">
+      <created>1695091760493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695091760493</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +145,7 @@
     <MESSAGE value="Program1 Complete" />
     <MESSAGE value="Program1 Complete&#10;Program2 Started -- to do: toString and comments;" />
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 Starting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete&#10;Program2 Complete&#10;Program3 Starting" />
+    <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress" />
   </component>
 </project>

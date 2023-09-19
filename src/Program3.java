@@ -8,6 +8,7 @@ public class Program3 {
         while (true) {
             duplicateCounterTest(input);
             System.out.println();
+            System.out.println();
         }
     }
 
@@ -19,7 +20,6 @@ public class Program3 {
             System.exit(0);
         }
 
-        test.setWordCountMap();
         test.displayDuplicates();
     }
 

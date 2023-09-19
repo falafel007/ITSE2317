@@ -7,7 +7,7 @@ public class DuplicateCounter {
 
     private final String sentence;
 
-    private Map<String, Integer> wordCountMap = new HashMap<>();
+    private final Map<String, Integer> wordCountMap = new HashMap<>();
 
     // Scanner Constructor
     DuplicateCounter(Scanner input) {
@@ -19,11 +19,11 @@ public class DuplicateCounter {
     }
 
     private String[] listWords() {
-        String lowerSentence = this.sentence.toLowerCase();
+        String lowerSentence = this.sentence.toLowerCase().replaceAll("\\p{Punct}", "");
         return lowerSentence.split(" ");
     } //end listWords
 
-    public void setWordCountMap(){
+    private void createWordCountMap(){
 
         for(String word: this.listWords()) {
 
@@ -34,11 +34,12 @@ public class DuplicateCounter {
             else {
                 this.wordCountMap.put(word, 1);
             }
-            // System.out.format("%s: %d%n", word, this.wordCountMap.get(word));
         }
     } // end createMap
 
     public void displayDuplicates() {
+
+        this.createWordCountMap();
 
         int duplicateCount = 0;
 
