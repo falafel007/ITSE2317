@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress">
+      <change afterPath="$PROJECT_DIR$/Program4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program4/Program4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program4/WorldSeriesTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/DuplicateCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/Program3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +47,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Program2" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695091760493</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress">
+      <created>1695092751725</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695092751725</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
