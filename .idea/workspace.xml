@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods, structure)&#10;Program4 Mostly Complete (structure)">
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program3/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/DuplicateCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program3/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/Program3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program4/Program4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program4/Program4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program4/WorldSeriesTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program4/WorldSeriesTracker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1695865178044</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)">
+      <created>1695866613950</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695866613950</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)">
+      <created>1695866875339</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695866875339</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)">
+      <created>1695866918553</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695866918553</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +198,7 @@
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress" />
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods)&#10;Program4 Started" />
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods, structure)&#10;Program4 Mostly Complete (structure)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods, structure)&#10;Program4 Mostly Complete (structure)" />
+    <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)" />
   </component>
 </project>
