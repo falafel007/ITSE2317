@@ -19,7 +19,7 @@ public class Program3 {
             final String prompt = "\nCount the duplicates in this sentence (type no to exit): ";
 
             System.out.print(prompt);
-            String sentence = input.nextLine();
+            String sentence = input.nextLine().strip();
 
             while (!sentence.equalsIgnoreCase("no")) {
                 DuplicateCounter test = new DuplicateCounter(sentence);
