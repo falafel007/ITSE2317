@@ -16,7 +16,7 @@ public class Program3 {
 
         try (Scanner input = new Scanner(System.in)) {
 
-            final String prompt = "Count the duplicates in this sentence (type no to exit): ";
+            final String prompt = "\nCount the duplicates in this sentence (type no to exit): ";
 
             System.out.print(prompt);
             String sentence = input.nextLine();

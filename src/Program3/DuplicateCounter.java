@@ -14,10 +14,6 @@ public class DuplicateCounter {
         this.sentence = input;
     } //end scanner constructor
 
-    public String getSentence() {
-        return this.sentence;
-    }
-
     private String[] listWords() {
         String lowerSentence = this.sentence.toLowerCase().replaceAll("\\p{Punct}", "");
         return lowerSentence.split(" ");
@@ -49,7 +45,7 @@ public class DuplicateCounter {
                 duplicateCount++;
             }
         }
-        System.out.format("There are %d duplicated words in \"%s\"", duplicateCount, this);
+        System.out.format("There are %d duplicated words in \"%s\"%n", duplicateCount, this);
     } // end displayDuplicates
 
     @Override
