@@ -1,7 +1,6 @@
 package Program3;
 
 import java.util.HashMap;
-import java.util.Scanner;
 import java.util.Map;
 
 public class DuplicateCounter {
@@ -11,8 +10,8 @@ public class DuplicateCounter {
     private final Map<String, Integer> wordCountMap = new HashMap<>();
 
     // Scanner Constructor
-    DuplicateCounter(Scanner input) {
-        this.sentence = input.nextLine();
+    DuplicateCounter(String input) {
+        this.sentence = input;
     } //end scanner constructor
 
     public String getSentence() {

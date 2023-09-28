@@ -5,24 +5,38 @@ import java.util.Scanner;
 public class Program3 {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        while (true) {
-            duplicateCounterTest(input);
-            System.out.println();
-            System.out.println();
+        Program3 obj = new Program3();
+
+        obj.duplicateCounterTest();
+
+    } // end main
+
+    public void duplicateCounterTest() {
+
+        try (Scanner input = new Scanner(System.in)) {
+
+            final String prompt = "Count the duplicates in this sentence (type no to exit): ";
+
+            System.out.print(prompt);
+            String sentence = input.nextLine();
+
+            while (!sentence.equalsIgnoreCase("no")) {
+                DuplicateCounter test = new DuplicateCounter(sentence);
+                test.displayDuplicates();
+
+                // continue prompt
+                System.out.print(prompt);
+                sentence = input.nextLine();
+            } // end loop
+
+            System.out.println("Goodbye.");
         }
-    }
 
-    public static void duplicateCounterTest(Scanner input) {
-        System.out.print("Count the duplicates in this sentence (type no to exit): ");
-        DuplicateCounter test = new DuplicateCounter(input);
+        catch (Exception e) {
+            e.printStackTrace();
+        } // end exception handling
 
-        if (test.getSentence().equalsIgnoreCase("no")) {
-            System.exit(0);
-        }
+    } // end DuplicateCounterTest
 
-        test.displayDuplicates();
-    }
-
-}
+} // end Program3
