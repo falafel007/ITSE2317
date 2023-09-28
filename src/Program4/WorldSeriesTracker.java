@@ -1,6 +1,5 @@
 package Program4;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +11,7 @@ public class WorldSeriesTracker {
     /**
      * counts the team wins in TeamWins HashMap
      *
-     * @param team
+     * @param team winning team's name
      *
      */
     public void addTeamWins(String team) {
@@ -29,8 +28,8 @@ public class WorldSeriesTracker {
 
     /**
      *
-     * @param year
-     * @param team
+     * @param year World Series was played
+     * @param team winning team's name
      */
     public void addYearlyWinner(int year, String team) {
         // no winners in 1904 or 1994

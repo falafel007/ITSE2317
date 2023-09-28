@@ -21,7 +21,7 @@ public class Program4 {
 
     /**
      * reads a file containing a list of teams and records the data in a WorldSeriesTracker object
-     * @param tracker
+     * @param tracker WorldSeriesTracker to be populated
      */
     private void readFileToWorldSeriesTracker(WorldSeriesTracker tracker) {
 
@@ -53,7 +53,7 @@ public class Program4 {
 
     /**
      * takes user input and displays World Series statistics from given WorldSeriesTracker object
-     * @param tracker
+     * @param tracker WorldSeriesTracker to get data from
      */
     private void getWorldSeriesStats (WorldSeriesTracker tracker) {
 
