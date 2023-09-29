@@ -1,5 +1,6 @@
 package Program3;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,18 +11,20 @@ public class DuplicateCounter {
 
     DuplicateCounter(String input) {
         this.sentence = input;
-        this.populateWordCountMap();
+        this.populateWordCountMap(); // is a method allowed here?
     }
 
     /**
-     * EFFECT prints duplicate words in sentence
+     * prints duplicate words in sentence
      */
     public void displayDuplicates() {
         int duplicateCount = this.countWordDuplicates();
         System.out.format("There are %d duplicated words in \"%s\"%n", duplicateCount, this);
     } // end displayDuplicates
 
-
+    /**
+     * populates WordCountMap
+     */
     private void populateWordCountMap(){
 
         for(String word: this.listWords()) {
@@ -35,7 +38,7 @@ public class DuplicateCounter {
     }
 
     /**
-     *  converts sentence to lowercase and removes punctuation; then adds words to array.
+     * converts sentence to lowercase and removes punctuation; then adds words to array.
      * @return an array of the words in a sentence
      */
     private String[] listWords() {
@@ -46,7 +49,7 @@ public class DuplicateCounter {
     /**
      *
      * @return duplicate count
-     * EFFECT print word duplicates
+     * EFFECT prints word duplicates
      */
     private int countWordDuplicates() {
         int duplicateCount = 0;
@@ -59,7 +62,6 @@ public class DuplicateCounter {
         }
         return duplicateCount;
     } // end countWordDuplicates
-
 
     @Override
     public String toString() {
