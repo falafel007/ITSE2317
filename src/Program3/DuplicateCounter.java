@@ -14,12 +14,25 @@ public class DuplicateCounter {
     }
 
     /**
-     * EFFECT prints duplicates in sentence
+     * EFFECT prints duplicate words in sentence
      */
     public void displayDuplicates() {
         int duplicateCount = this.countWordDuplicates();
         System.out.format("There are %d duplicated words in \"%s\"%n", duplicateCount, this);
     } // end displayDuplicates
+
+
+    private void populateWordCountMap(){
+
+        for(String word: this.listWords()) {
+            if (this.wordCountMap.containsKey(word)) {
+                this.wordCountMap.put(word, this.wordCountMap.get(word) + 1);
+            }
+            else {
+                this.wordCountMap.put(word, 1);
+            }
+        }
+    }
 
     /**
      *
@@ -46,21 +59,6 @@ public class DuplicateCounter {
         String lowerSentence = this.sentence.toLowerCase().replaceAll("\\p{Punct}", "");
         return lowerSentence.split(" ");
     } //end listWords
-
-    /**
-     * populates the WordCountMap with words from a String[]
-     */
-    private void populateWordCountMap(){
-
-        for(String word: this.listWords()) {
-            if (this.wordCountMap.containsKey(word)) {
-                this.wordCountMap.put(word, this.wordCountMap.get(word) + 1);
-            }
-            else {
-                this.wordCountMap.put(word, 1);
-            }
-        }
-    }
 
     @Override
     public String toString() {

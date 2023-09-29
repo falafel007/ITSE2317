@@ -12,10 +12,6 @@ public class WorldSeriesTracker {
     private Map<Integer, String> yearlyWinner = new HashMap<>();
     private Map<String, Integer> teamWins = new HashMap<>();
 
-    /**
-     * Constructor creates WorldSeriesTracker with file of winning teams
-     * @param filename of file that lists World Series winners
-     */
     WorldSeriesTracker(String filename) {
 
         try(Scanner input = new Scanner(Paths.get(filename))) {

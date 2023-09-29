@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)">
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program3 Final? (structure)&#10;Program4 Mostly Complete (structure)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program3/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/DuplicateCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program3/Program3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program3/Program3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program4/WorldSeriesTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program4/WorldSeriesTracker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695867474182</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Program3 Final? (structure)&#10;Program4 Mostly Complete (structure)">
+      <created>1695947790430</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1695947790430</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +214,7 @@
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods)&#10;Program4 Started" />
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (remove static methods, structure)&#10;Program4 Mostly Complete (structure)" />
     <MESSAGE value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program1 Complete&#10;Program2 Complete&#10;Program3 In Progress (structure)&#10;Program4 Mostly Complete (structure)" />
+    <MESSAGE value="Program3 Final? (structure)&#10;Program4 Mostly Complete (structure)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program3 Final? (structure)&#10;Program4 Mostly Complete (structure)" />
   </component>
 </project>

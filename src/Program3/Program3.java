@@ -30,7 +30,6 @@ public class Program3 {
                 sentence = input.nextLine();
             } // end loop
 
-            System.out.println("Goodbye.");
         }
 
         catch (Exception e) {
