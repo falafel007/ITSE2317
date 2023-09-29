@@ -35,6 +35,15 @@ public class DuplicateCounter {
     }
 
     /**
+     *  converts sentence to lowercase and removes punctuation; then adds words to array.
+     * @return an array of the words in a sentence
+     */
+    private String[] listWords() {
+        String lowerSentence = this.sentence.toLowerCase().replaceAll("\\p{Punct}", "");
+        return lowerSentence.split(" ");
+    } //end listWords
+
+    /**
      *
      * @return duplicate count
      * EFFECT print word duplicates
@@ -51,14 +60,6 @@ public class DuplicateCounter {
         return duplicateCount;
     } // end countWordDuplicates
 
-    /**
-     *  converts sentence to lowercase and removes punctuation; then adds words to array.
-     * @return an array of the words in a sentence
-     */
-    private String[] listWords() {
-        String lowerSentence = this.sentence.toLowerCase().replaceAll("\\p{Punct}", "");
-        return lowerSentence.split(" ");
-    } //end listWords
 
     @Override
     public String toString() {
