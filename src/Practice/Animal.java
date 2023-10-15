@@ -4,6 +4,7 @@ public class Animal {
 
     double mass;
 
+    Animal() {};
     Animal(double mass) {
         this.mass = mass;
     }

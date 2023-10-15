@@ -48,7 +48,9 @@ public class WorldSeriesTracker {
 
         try(Scanner input = new Scanner(Paths.get(filename))) {
 
-            int currentYear = 1903;
+            final int startingYear = 1903;
+
+            int currentYear = startingYear;
 
             while (input.hasNext()) {
 
@@ -102,6 +104,12 @@ public class WorldSeriesTracker {
         this.yearlyWinner.put(year, team);
     } // end addYearlyWinner
 
+    /**
+     * Method: displayData
+     * Description: given a year, return String describing the winning team and the total wins by that team
+     * @param year about which to display World Series Data.
+     * @return String describing winning team in given year and number of total wins by that team
+     */
     public String displayData(int year) {
         String output;
 
@@ -112,12 +120,13 @@ public class WorldSeriesTracker {
             String grammar = "time";
             if (wins > 1) grammar = "times";
 
-            output = String.format("The World Series was won by the %s in %d. The %s have won the World Series %d %s.%n",
+            output = String.format("The %s won the World Series in %d.%n" +
+                            "The %s have won the World Series %d %s.%n",
                     winner, year, winner, wins, grammar);
         }
 
         else {
-            output = String.format("The world series was not played in %d.%n", year);
+            output = String.format("The World Series was not played in %d.%n", year);
         }
 
         return output;
