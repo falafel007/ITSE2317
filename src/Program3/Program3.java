@@ -12,6 +12,9 @@ public class Program3 {
 
     } // end main
 
+    /**
+     *
+     */
     public void duplicateCounterTest() {
 
         try (Scanner input = new Scanner(System.in)) {
