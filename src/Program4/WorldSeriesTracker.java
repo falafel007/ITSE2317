@@ -48,9 +48,7 @@ public class WorldSeriesTracker {
 
         try(Scanner input = new Scanner(Paths.get(filename))) {
 
-            final int startingYear = 1903;
-
-            int currentYear = startingYear;
+            int currentYear = 1903;
 
             while (input.hasNext()) {
 
