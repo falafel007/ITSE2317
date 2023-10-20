@@ -42,7 +42,7 @@ public class InvoiceProcessor {
         Sort the Invoice objects by partDescription, then display the results.
     */
     public void invoiceByDescription() {
-        System.out.printf("%nObjects Sorted by Part Description:%n");
+        System.out.printf("%nInvoices Sorted by Part Description:%n");
 
         this.invoiceList.stream()
                 .sorted(Comparator.comparing(Invoice::getPartDescription))
@@ -53,10 +53,23 @@ public class InvoiceProcessor {
     Sort the Invoice objects by pricePerItem, then display the results.
      */
     public void invoiceByPrice() {
-        System.out.printf("%nObjects Sorted by Price:%n");
+        System.out.printf("%nInvoices Sorted by Price:%n");
 
         this.invoiceList.stream()
                 .sorted(Comparator.comparing(Invoice::getPrice))
+                .forEach(System.out::println);
+    }
+    /*
+     Map each Invoice to its partDescription and quantity, sort the results by quantity, then display the results
+     */
+
+    public void invoiceDescriptiontoQuantity() {
+        System.out.println("Invoices Mapped by Description to Quantity:");
+
+        this.invoiceList.stream()
+                .sorted(Comparator.comparing(Invoice::getQuantity))
+                .map(invoice -> invoice.getPartDescription(), invoiceList.stream()
+                        .map(invoice -> invoice.getQuantity())
                 .forEach(System.out::println);
     }
 
