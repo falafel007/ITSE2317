@@ -1,3 +1,23 @@
+//********************************************************************
+//
+//  Developer:    Christopher Felleisen
+//
+//  Program #:    Five
+//
+//  File Name:    InvoiceProcessor.java
+//
+//  Course:       ITSE 2317 Intermediate Java Programming
+//
+//  Due Date:     10/25/2022
+//
+//  Instructor:   Prof. Fred Kumi
+//
+//  Chapter:      17
+//
+//  Description:  Invoice
+//
+//********************************************************************
+
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
