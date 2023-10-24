@@ -37,10 +37,13 @@ public class Program5 {
 
         // InvoiceProcessor invoiceList = new InvoiceProcessor(Arrays.asList(invoices));
 
-        InvoiceProcessor invoiceList = InvoiceProcessor.invoiceProcessorFactory("Invoice-Data.txt");
+        InvoiceProcessor invoiceList = new InvoiceProcessor("Invoice-Data.txt");
 
         invoiceList.invoiceByDescription();
         invoiceList.invoiceByPrice();
+        invoiceList.invoicesDescriptiontoQuantity();
+        invoiceList.findSaw();
+
 
     }
 
