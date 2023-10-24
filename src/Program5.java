@@ -39,9 +39,11 @@ public class Program5 {
 
         InvoiceProcessor invoiceList = new InvoiceProcessor("Invoice-Data.txt");
 
-        invoiceList.invoiceByDescription();
-        invoiceList.invoiceByPrice();
+        invoiceList.invoicesByDescription();
+        invoiceList.invoicesByPrice();
         invoiceList.invoicesDescriptiontoQuantity();
+        invoiceList.invoicesPartDescriptionToValue();
+        invoiceList.invoiceValuesInRange();
         invoiceList.findSaw();
 
 

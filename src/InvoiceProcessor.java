@@ -14,7 +14,7 @@
 //
 //  Chapter:      17
 //
-//  Description:  Invoice
+//  Description:  InvoiceProcessor performs various tasks on a list of invoices using .stream()
 //
 //********************************************************************
 
@@ -96,7 +96,7 @@ public class InvoiceProcessor {
     }
 
     /*
-    How can I properly use this function in invoicesDescriptiontoQuantity?
+    How can I properly use this function in invoicesDescriptionToQuantity?
      */
     Function<Invoice, String> sDescriptionToQuantity = i ->
             String.format("Description: %-15s  Quantity: %-4d", i.getPartDescription(), i.getQuantity());
@@ -106,10 +106,12 @@ public class InvoiceProcessor {
     Order the results by Invoice value. Then display the results.
     */
     public void invoicesPartDescriptionToValue() {
+        System.out.println("\n(d) Invoices Mapped by Description to Value:");
 
-        HashMap<String, Double> descriptionToValue = new HashMap<>();
-
-        this.invoiceList.stream();
+        this.invoiceList.stream()
+                .sorted(Comparator.comparing(calculateValue))
+                .map(i -> String.format("Description: %-15s  Value: %-4b", i.getPartDescription(), calculateValue))
+                .forEach(System.out::println);
 
     }
 
@@ -119,19 +121,23 @@ public class InvoiceProcessor {
     (e) Modify Part (D) to select the Invoice values in the range $200.00 to $500.00. Then display the results.
     */
     public void invoiceValuesInRange() {
-        System.out.println("%n(e) Invoice values in the range $200.00 to $500.00:");
+        System.out.println("\n(e) Invoice values in the range $200.00 to $500.00:");
 
-        this.invoicesPartDescriptionToValue();
+        this.invoiceList.stream()
+                .sorted(Comparator.comparing(calculateValue))
+                .filter(twoToFiveHundred)
+                .map(i -> String.format("Description: %-15s  Value: %-4b", i.getPartDescription(), calculateValue))
+                .forEach(System.out::println);
 
     }
 
-    Predicate<Invoice> twoToFiveHundred = i ->(i.getPrice() >= 200 && i.getPrice() <=500);
+    Predicate<Invoice> twoToFiveHundred = i ->(i.getPrice() * i.getQuantity() >= 200 && i.getPrice() * i.getQuantity() <= 500);
     /*
     (f) Find any one Invoice in which the partDescription contains the word “Saw”. Then display the results.
     */
 
     public void findSaw() {
-        System.out.println("\n(f) One Invoice in which the Part Descirption contains the word \"Saw\":");
+        System.out.println("\n(f) One Invoice in which the Part Description contains the word \"Saw\":");
 
         System.out.println(
                 this.invoiceList.stream()
