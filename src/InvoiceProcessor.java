@@ -23,7 +23,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+
 
 import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
@@ -110,7 +110,7 @@ public class InvoiceProcessor {
 
         this.invoiceList.stream()
                 .sorted(Comparator.comparing(calculateValue))
-                .map(i -> String.format("Description: %-15s  Value: %-4b", i.getPartDescription(), calculateValue))
+                .map(i -> String.format("Description: %-15s  Value: $%,9.2f", i.getPartDescription(), (i.getPrice() * i.getQuantity())))
                 .forEach(System.out::println);
 
     }
@@ -126,9 +126,8 @@ public class InvoiceProcessor {
         this.invoiceList.stream()
                 .sorted(Comparator.comparing(calculateValue))
                 .filter(twoToFiveHundred)
-                .map(i -> String.format("Description: %-15s  Value: %-4b", i.getPartDescription(), calculateValue))
+                .map(i -> String.format("Description: %-15s  Value: $%,9.2f", i.getPartDescription(), (i.getPrice() * i.getQuantity())))
                 .forEach(System.out::println);
-
     }
 
     Predicate<Invoice> twoToFiveHundred = i ->(i.getPrice() * i.getQuantity() >= 200 && i.getPrice() * i.getQuantity() <= 500);

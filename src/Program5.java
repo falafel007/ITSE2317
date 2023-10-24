@@ -24,6 +24,9 @@ public class Program5 {
         Program5 test = new Program5();
         test.developerInfo();
 
+        /*
+        Test array
+
         Invoice[] invoices = {
                 new Invoice(83,"Electric Sander",7,57.98),
                 new Invoice(24,"Power Saw",18,99.99),
@@ -35,7 +38,8 @@ public class Program5 {
                 new Invoice(3,"Wrench",34,7.50)
         };
 
-        // InvoiceProcessor invoiceList = new InvoiceProcessor(Arrays.asList(invoices));
+        InvoiceProcessor invoiceList = new InvoiceProcessor(Arrays.asList(invoices));
+         */
 
         InvoiceProcessor invoiceList = new InvoiceProcessor("Invoice-Data.txt");
 
@@ -45,7 +49,6 @@ public class Program5 {
         invoiceList.invoicesPartDescriptionToValue();
         invoiceList.invoiceValuesInRange();
         invoiceList.findSaw();
-
 
     }
 
