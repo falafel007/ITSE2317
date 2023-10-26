@@ -24,30 +24,19 @@ public class Program5 {
         Program5 test = new Program5();
         test.developerInfo();
 
-        /*
-        Test array
-
-        Invoice[] invoices = {
-                new Invoice(83,"Electric Sander",7,57.98),
-                new Invoice(24,"Power Saw",18,99.99),
-                new Invoice(7,"Sledge Hammer",11,21.50),
-                new Invoice(77,"Hammer",76,11.99),
-                new Invoice(39,"Lawn Mower",3,79.50),
-                new Invoice(68,"Screwdriver",106,6.99),
-                new Invoice(56,"Jig Saw",21,11.00),
-                new Invoice(3,"Wrench",34,7.50)
-        };
-
-        InvoiceProcessor invoiceList = new InvoiceProcessor(Arrays.asList(invoices));
-         */
-
+        // Creates an InvoiceProcessor object using the Invoice-Data.txt file
         InvoiceProcessor invoiceList = new InvoiceProcessor("Invoice-Data.txt");
-
+        // displays invoices sorted by description (ascending)
         invoiceList.invoicesByDescription();
+        // displays invoices sorted by price (ascending)
         invoiceList.invoicesByPrice();
-        invoiceList.invoicesDescriptiontoQuantity();
+        // displays invoice descriptions and quantities, sorted by quantity (ascending)
+        invoiceList.invoicesDescriptionToQuantity();
+        // displays invoices descriptions and values, sorted by value (ascending)
         invoiceList.invoicesPartDescriptionToValue();
+        // displays invoices descriptions and values between $200 and $500, inclusive, sorted by value (ascending)
         invoiceList.invoiceValuesInRange();
+        // displays one invoice with a description containing the String "Saw"
         invoiceList.findSaw();
 
     }
