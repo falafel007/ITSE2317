@@ -1,10 +1,10 @@
-//********************************************************************
+package Program5;//********************************************************************
 //
 //  Developer:    Christopher Felleisen
 //
 //  Program #:    Five
 //
-//  File Name:    InvoiceProcessor.java
+//  File Name:    Program5.Program5.InvoiceProcessor.java
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
@@ -14,7 +14,7 @@
 //
 //  Chapter:      17
 //
-//  Description:  InvoiceProcessor performs various tasks on a list of invoices using .stream()
+//  Description:  Program5.Program5.InvoiceProcessor performs various tasks on a list of invoices using .stream()
 //
 //********************************************************************
 
@@ -60,7 +60,7 @@ public class InvoiceProcessor {
      Method Name: invoicesByDescription
      Parameters: none
      Return: void
-     Description: (A) Sort the Invoice objects by partDescription, then display the results.
+     Description: (A) Sort the Program5.Program5.Invoice objects by partDescription, then display the results.
     */
     public void invoicesByDescription() {
         System.out.printf("%n(a) Invoices Sorted by Part Description:%n");
@@ -74,7 +74,7 @@ public class InvoiceProcessor {
      Method Name: invoicesByPrice
      Parameters: none
      Return: void
-     Description: (B) Sort the Invoice objects by pricePerItem, then display the results.
+     Description: (B) Sort the Program5.Program5.Invoice objects by pricePerItem, then display the results.
      */
     public void invoicesByPrice() {
         System.out.printf("%n(b) Invoices Sorted by Price:%n");
@@ -85,10 +85,10 @@ public class InvoiceProcessor {
     }
 
     /*
-     Method Name: invoicesDescriptiontoQuantity
+     Method Name: invoicesDescriptionToQuantity
      Parameters: none
      Return: void
-     Description: (C) Map each Invoice to its partDescription and quantity, sort the results by quantity, then display the results
+     Description: (C) Map each Program5.Program5.Invoice to its partDescription and quantity, sort the results by quantity, then display the results
      */
 
     public void invoicesDescriptionToQuantity() {
@@ -102,7 +102,7 @@ public class InvoiceProcessor {
 
     /*
     Function: sDescriptionToQuantity
-    Parameters: Invoice
+    Parameters: Program5.Program5.Invoice
     Return: String Description and Quantity
     Description: Consumes an invoice and returns a string with a description and quantity for the invoice item
      */
@@ -113,8 +113,8 @@ public class InvoiceProcessor {
      Method Name: invoicesDescriptionToValue
      Parameters: none
      Return: void
-     Description: (D) Map each Invoice to its partDescription and the value of the Invoice (i.e., quantity * pricePerItem).
-                  Order the results by Invoice value. Then display the results.
+     Description: (D) Map each Program5.Program5.Invoice to its partDescription and the value of the Program5.Program5.Invoice (i.e., quantity * pricePerItem).
+                  Order the results by Program5.Program5.Invoice value. Then display the results.
     */
     public void invoicesPartDescriptionToValue() {
         System.out.println("\n(d) Invoices Mapped by Description to Value:");
@@ -128,10 +128,10 @@ public class InvoiceProcessor {
 
     /*
     Function: calculateValue
-    Parameters: Invoice
+    Parameters: Program5.Program5.Invoice
     Return: Double dollar value of the invoice
     Description: consumes an invoice and returns the dollar value of the invoice
-    QUESTIONS: Why isn't this function a method in the Invoice Class? How can I use this in lines 124/150 to make it more readable?
+    QUESTIONS: Why isn't this function a method in the Program5.Program5.Invoice Class? How can I use this in lines 124/150 to make it more readable?
      */
     Function<Invoice, Double> calculateValue = i -> i.getPrice() * i.getQuantity();
 
@@ -139,10 +139,10 @@ public class InvoiceProcessor {
      Method Name: invoiceValuesInRange
      Parameters: none
      Return: void
-     Description: (e) Modify Part (D) to select the Invoice values in the range $200.00 to $500.00. Then display the results.
+     Description: (e) Modify Part (D) to select the Program5.Program5.Invoice values in the range $200.00 to $500.00. Then display the results.
     */
     public void invoiceValuesInRange() {
-        System.out.println("\n(e) Invoice values in the range $200.00 to $500.00:");
+        System.out.println("\n(e) Program5.Program5.Invoice values in the range $200.00 to $500.00:");
 
         this.invoiceList.stream()
                 .sorted(Comparator.comparing(calculateValue))
@@ -163,11 +163,11 @@ public class InvoiceProcessor {
      Method Name: findSaw
      Parameters: none
      Return: void
-     Description: (f) Find any one Invoice in which the partDescription contains the word “Saw”. Then display the results.
+     Description: (f) Find any one Program5.Program5.Invoice in which the partDescription contains the word “Saw”. Then display the results.
     */
 
     public void findSaw() {
-        System.out.println("\n(f) One Invoice in which the Part Description contains the word \"Saw\":");
+        System.out.println("\n(f) One Program5.Program5.Invoice in which the Part Description contains the word \"Saw\":");
 
         System.out.println(
                 this.invoiceList.stream()

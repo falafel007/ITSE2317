@@ -1,10 +1,10 @@
-//********************************************************************
+package Program5;//********************************************************************
 //
 //  Developer:    Christopher Felleisen
 //
 //  Program #:    Five
 //
-//  File Name:    Program5.java
+//  File Name:    Program5.Program5.java
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
@@ -14,7 +14,7 @@
 //
 //  Chapter:      17
 //
-//  Description:  Invoice
+//  Description:  Program5.Program5.Invoice
 //
 //********************************************************************
 
@@ -24,8 +24,8 @@ public class Program5 {
         Program5 test = new Program5();
         test.developerInfo();
 
-        // Creates an InvoiceProcessor object using the Invoice-Data.txt file
-        InvoiceProcessor invoiceList = new InvoiceProcessor("Invoice-Data.txt");
+        // Creates an Program5.Program5.InvoiceProcessor object using the Program5.Program5.Invoice-Data.txt file
+        InvoiceProcessor invoiceList = new InvoiceProcessor("Program5.Program5.Invoice-Data.txt");
         // displays invoices sorted by description (ascending)
         invoiceList.invoicesByDescription();
         // displays invoices sorted by price (ascending)

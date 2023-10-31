@@ -1,16 +1,16 @@
-//***************************************************************
+package Program5;//***************************************************************
 //
 //  Developer:         Instructor
 //
 //  Program #:         Five
 //
-//  File Name:         Invoice.java
+//  File Name:         Program5.Program5.Invoice.java
 //
 //  Course:            ITSE 2317 Intermediate Java Programming 
 //
 //  Instructor:        Fred Kumi 
 //
-//  Description:       Invoice class.  Please do NOT modify this Class.
+//  Description:       Program5.Program5.Invoice class.  Please do NOT modify this Class.
 //                     If you do, you will not receive credit for ths
 //                     program.
 //***************************************************************
@@ -91,7 +91,7 @@ public class Invoice
 	   return String.format("$%,.2f", getPrice()); 
    }
    
-   // return String representation of Invoice object
+   // return String representation of Program5.Program5.Invoice object
    @Override
    public String toString()
    {
