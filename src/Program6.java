@@ -8,7 +8,7 @@
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
-//  Due Date:     10/25/2022
+//  Due Date:     11/2/2022
 //
 //  Instructor:   Prof. Fred Kumi
 //
@@ -18,44 +18,50 @@
 //
 //********************************************************************
 
-import java.math.BigInteger;
-import java.util.stream.IntStream;
-
 public class Program6 { //FibonacciCalculator Class from fig 18.5
-    private static final BigInteger TWO = BigInteger.valueOf(2);
-    private static int count = 0;
+
     
     public static void main(String[] args) {
 
-        double startTime = System.currentTimeMillis();
+        Program6 program6 = new Program6(); // instance of Program6 to access non-static methods
+        program6.developerInfo();
 
-        // as a stream for practoce
-        /*
-        IntStream.rangeClosed(0, 40)
-                .mapToObj(i -> String.format("Fibonacci of %d is %d%n", i, fibonacci(BigInteger.valueOf(i))))
-                .forEach(System.out::println);
-        */
+        FibonacciCalculator test = new FibonacciCalculator(); // test instance of FibonacciCalculator
 
-        for (int counter = 0; counter <= 40; counter++) {
-            System.out.printf("Fibonacci of %d is: %d%n", counter, fibonacci(BigInteger.valueOf(counter)));
-        }
+        double time = test.timeFibonacci(0, 40); // record time and display fibonacci values from 0 to 40
+        test.displayCount(); // display count of calls to test.fibonacci
 
-        double endTime = System.currentTimeMillis();
-        System.out.printf("Computation Time: %.2f milliseconds.%n", (endTime - startTime));
-        System.out.printf("Number of calls to fibonacci method: %,d", count);
+        program6.displayRuntime(time); // display time
+
     }
 
-    // recursive declaration of method fibonacci
-    public static BigInteger fibonacci(BigInteger number) {
-
-        if (number.equals(BigInteger.ZERO) || number.equals(BigInteger.ONE)) {
-            count += 1;
-            return number;
-        }
-        else {
-            count += 1;
-            return fibonacci(number.subtract(BigInteger.ONE)).add(fibonacci(number.subtract(TWO)));
-        }
+    /*
+    Method: displayRuntime
+    Parameters: startTime endTime
+    Return: void
+    Description: displays the total runtime in milliseconds given a start and an end time in
+     */
+    private void displayRuntime(double time) {
+        System.out.printf("%nComputation Time: %.2f milliseconds.%n", time);
     }
+
+    //***************************************************************
+    //
+    //  Method:       developerInfo (Non Static)
+    //
+    //  Description:  The developer information method of the program
+    //
+    //  Parameters:   None
+    //
+    //  Returns:      N/A
+    //
+    //**************************************************************
+    public void developerInfo()
+    {
+        System.out.println("Name:    Christopher Felleisen");
+        System.out.println("Course:  ITSE 2317 Intermediate Java Programming");
+        System.out.println("Program: Six\n\n");
+
+    } // End of the developerInfo method
 
 }

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 5 In Progress, needs comments">
-      <change afterPath="$PROJECT_DIR$/src/Program6.java" afterDir="false" />
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 6 In Progress">
+      <change afterPath="$PROJECT_DIR$/src/FibonacciCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program5/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InvoiceProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program5/InvoiceProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program5/Program5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +47,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Program2" />
     </key>
   </component>
@@ -279,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698285931214</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Program 6 In Progress">
+      <created>1698716756322</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698716756322</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,6 +313,7 @@
     <MESSAGE value="Program 5 In Progress Map to Map?" />
     <MESSAGE value="Program 5 In Progress" />
     <MESSAGE value="Program 5 In Progress, needs comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program 5 In Progress, needs comments" />
+    <MESSAGE value="Program 6 In Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program 6 In Progress" />
   </component>
 </project>
