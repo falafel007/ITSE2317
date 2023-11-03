@@ -8,7 +8,7 @@
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
-//  Due Date:     11/2/2022
+//  Due Date:     11/3/2022
 //
 //  Instructor:   Prof. Fred Kumi
 //
@@ -18,7 +18,7 @@
 //
 //********************************************************************
 
-public class Program6 { //FibonacciCalculator Class from fig 18.5
+public class Program6 {
 
     
     public static void main(String[] args) {

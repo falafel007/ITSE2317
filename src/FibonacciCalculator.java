@@ -8,7 +8,7 @@
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
-//  Due Date:     11/2/2022
+//  Due Date:     11/3/2022
 //
 //  Instructor:   Prof. Fred Kumi
 //
@@ -19,7 +19,7 @@
 //********************************************************************
 import java.math.BigInteger;
 
-public class FibonacciCalculator {
+public class FibonacciCalculator { //modified FibonacciCalculator Class from fig 18.5
     private static final BigInteger TWO = BigInteger.valueOf(2);
     private int count = 0; // variable to count
 
@@ -70,7 +70,7 @@ public class FibonacciCalculator {
     Description: displays the number of times method fibonacci has been called
     */
     public void displayCount(){
-        System.out.printf("%nNumber of calls to Fibonacci method: %,d%n", this.count);
+        System.out.printf("%nNumber of calls to fibonacci method: %,d%n", this.count);
     }
 
 }
