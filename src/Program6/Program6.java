@@ -1,10 +1,10 @@
-//********************************************************************
+package Program6;//********************************************************************
 //
 //  Developer:    Christopher Felleisen
 //
 //  Program #:    Six
 //
-//  File Name:    Program6.java
+//  File Name:    Program6.Program6.java
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
@@ -18,22 +18,29 @@
 //
 //********************************************************************
 
+import Program5.Invoice;
+
+import java.lang.invoke.MethodType;
+import java.lang.reflect.Method;
+import java.lang.runtime.ObjectMethods;
+import java.util.function.*;
+
 public class Program6 {
 
     
     public static void main(String[] args) {
 
-        Program6 program6 = new Program6(); // instance of Program6 to access non-static methods
+        Program6 program6 = new Program6(); // instance of Program6.Program6 to access non-static methods
         program6.developerInfo();
 
-        FibonacciCalculator test = new FibonacciCalculator(); // test instance of FibonacciCalculator
+        FibonacciCalculator test = new FibonacciCalculator(); // test instance of Program6.FibonacciCalculator
 
         double time = test.timeFibonacci(0, 40); // record time and display fibonacci values from 0 to 40
         test.displayCount(); // display count of calls to test.fibonacci
 
         program6.displayRuntime(time); // display time
-
     }
+
 
     /*
     Method: displayRuntime

@@ -1,10 +1,10 @@
-//********************************************************************
+package Program6;//********************************************************************
 //
 //  Developer:    Christopher Felleisen
 //
 //  Program #:    Six
 //
-//  File Name:    FibonacciCalculator.java
+//  File Name:    Program6.FibonacciCalculator.java
 //
 //  Course:       ITSE 2317 Intermediate Java Programming
 //
@@ -14,12 +14,13 @@
 //
 //  Chapter:      18
 //
-//  Description:  Updated FibonacciCalculator from fig 18.5
+//  Description:  Updated Program6.FibonacciCalculator from fig 18.5
 //
 //********************************************************************
 import java.math.BigInteger;
+import java.util.function.Function;
 
-public class FibonacciCalculator { //modified FibonacciCalculator Class from fig 18.5
+public class FibonacciCalculator { //modified Program6.FibonacciCalculator Class from fig 18.5
     private static final BigInteger TWO = BigInteger.valueOf(2);
     private int count = 0; // variable to count
 
@@ -44,6 +45,7 @@ public class FibonacciCalculator { //modified FibonacciCalculator Class from fig
         return endTime - startTime;
     }
 
+
     /*
     Method: fibonacci
     Parameter: BigInteger number
@@ -51,7 +53,7 @@ public class FibonacciCalculator { //modified FibonacciCalculator Class from fig
     Description: recursive declaration of method fibonacci calculates and returns fibonacci value of given BigInteger
     Effects: increases this.count by 1 for each call.
      */
-    private BigInteger fibonacci(BigInteger number) {
+    public BigInteger fibonacci(BigInteger number) {
 
         if (number.equals(BigInteger.ZERO) || number.equals(BigInteger.ONE)) {
             this.count += 1;
