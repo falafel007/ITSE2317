@@ -1,10 +1,10 @@
-//********************************************************************
+package Program7;//********************************************************************
 //
 //  Developer:     Instructor
 //
 //  Program #:     Seven
 //
-//  File Name:     Program7.java
+//  File Name:     Program7.Program7.java
 //
 //  Course:        ITSE 2317 Intermediate Java Programming
 //
@@ -44,20 +44,35 @@ public class Program7
 
       System.out.printf("Array integerArray contains: ");
       printArray(integerArray); // pass an Integer array
-      test.printArray(integerArray, 2, 4); //valid
-      //System.out.println(test.printArray(integerArray, 2, 6)); //error
+
+      // demonstrate new printArray on integerArray
+      System.out.printf("Number of sub-array items printed: %d%n%n",
+              test.printArray(integerArray, 2, 4)); //valid
+
+      System.out.printf("Number of sub-array items printed: %d%n%n",
+              test.printArray(integerArray, 2, 6)); //exception thrown
 
 	  
       System.out.printf("Array doubleArray contains: ");
       printArray(doubleArray); // pass a Double array
-      test.printArray(doubleArray, 0, 0); // valid
-      //test.printArray(doubleArray, -1, 6); //error
 
-	  
+      // demonstrate new printArray on doubleArray
+      System.out.printf("Number of sub-array items printed: %d%n%n",
+              test.printArray(doubleArray, 0, 0)); // valid
+
+      System.out.printf("Number of sub-array items printed: %d%n",
+              test.printArray(doubleArray, -1, 6)); //exception thrown
+
+
       System.out.printf("Array characterArray contains: ");
       printArray(characterArray); // pass a Character array
-      test.printArray(characterArray, 0, 4); //valid
-      //test.printArray(characterArray, 6, 2); // error
+
+      // demonstrate new printArray on characterArray
+      System.out.printf("Number of sub-array items printed: %d%n%n",
+              test.printArray(characterArray, 0, 4)); //valid
+
+      System.out.printf("Number of sub-array items printed: %d%n%n",
+              test.printArray(characterArray, 6, 2)); //exception thrown
    }
 
    // generic method printArray                     
@@ -91,7 +106,7 @@ public class Program7
             }
 
             System.out.println();
-            itemsPrinted = highSubscript - lowSubscript;
+            itemsPrinted = highSubscript - lowSubscript + 1;
          }
       }
       catch(RuntimeException e) {
@@ -102,13 +117,25 @@ public class Program7
 
    }
 
+   /*
+   Method: isLowSubscriptValid
+   Parameters: int lowSubscript int highSubscript (index values)
+   Return: boolean
+   Description: validates lowSubScript value or throws an Program7.InvalidSubscriptException exception
+    */
    private Boolean isLowSubscriptValid (int lowSubscript, int highSubscript) throws InvalidSubscriptException {
       Boolean result = true;
       if (lowSubscript < 0) throw new InvalidSubscriptException("Lower Index Invalid: Cannot be less than 0.");
-      if (lowSubscript > highSubscript) throw new InvalidSubscriptException("Invalid Index: Lower index cannot be greater than the upper index ");
+      if (lowSubscript > highSubscript) throw new InvalidSubscriptException("Invalid Index: Lower index cannot be greater than the upper index.");
       return result;
    }
 
+   /*
+   Method: isHighSubscriptValid
+   Parameters: T inputArray, int highSubscript (index values)
+   Return: boolean
+   Description: validates highSubScript value or throws an Program7.InvalidSubscriptException exception
+ */
    private  <T> Boolean isHighSubscriptValid (T[] inputArray, int highSubscript) throws InvalidSubscriptException {
       Boolean result = true;
       if (highSubscript >= inputArray.length) throw new InvalidSubscriptException("Upper Index Invalid: Out of bounds.");
