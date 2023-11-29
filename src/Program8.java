@@ -29,14 +29,17 @@ public class Program8 {
         InfixToPostfixConverter infix2 = new InfixToPostfixConverter(new StringBuffer("6 + 2 * 5"));
         System.out.println(infix2);
 
-        InfixToPostfixConverter infix3 = new InfixToPostfixConverter(new StringBuffer("(6 + 2) * 5 - 8 / 4"));
+        InfixToPostfixConverter infix3 = new InfixToPostfixConverter((new StringBuffer("6 + 2 * 5 - 8 / 4")));
         System.out.println(infix3);
 
-        InfixToPostfixConverter infix4 = new InfixToPostfixConverter(new StringBuffer("(6 + 2) * 5 ^ 8 / 4"));
+        InfixToPostfixConverter infix4 = new InfixToPostfixConverter(new StringBuffer("(6 + 2) * 5 - 8 / 4"));
         System.out.println(infix4);
 
-        InfixToPostfixConverter infix5 = new InfixToPostfixConverter(new StringBuffer("6 % 2 ^ 5 - 8 / 4 * 5"));
+        InfixToPostfixConverter infix5 = new InfixToPostfixConverter(new StringBuffer("(6 + 2) * 5 ^ 8 / 4"));
         System.out.println(infix5);
+
+        InfixToPostfixConverter infix6 = new InfixToPostfixConverter(new StringBuffer("6 % 2 ^ 5 - 8 / 4 * 5"));
+        System.out.println(infix6);
 
     }
 

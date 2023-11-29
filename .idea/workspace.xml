@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 6 Complete">
-      <change afterPath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Program8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 8 Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program7/Program7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699924355126</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Program 8 Complete">
+      <created>1701145459398</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1701145459398</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,6 +347,7 @@
     <MESSAGE value="Program 5 In Progress, needs comments" />
     <MESSAGE value="Program 6 In Progress" />
     <MESSAGE value="Program 6 Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program 6 Complete" />
+    <MESSAGE value="Program 8 Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program 8 Complete" />
   </component>
 </project>
