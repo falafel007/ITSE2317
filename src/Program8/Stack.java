@@ -1,10 +1,11 @@
+package Program8;
 //********************************************************************
 //
 //  Developer:     Textbook Authors
 //
 //  Program #:     Eight
 //
-//  File Name:     Stack.java
+//  File Name:     Program8.Stack.java
 //
 //  Course:        ITSE 2317 Intermediate Java Programming
 //
@@ -14,7 +15,7 @@
 //
 //  Chapter:       21
 //
-//  Description:   Stack uses a composed List object.
+//  Description:   Program8.Stack uses a composed Program8.List object.
 //
 //********************************************************************
 

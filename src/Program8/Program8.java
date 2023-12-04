@@ -1,10 +1,12 @@
+package Program8;
+
 //********************************************************************
 //
 //  Developer:     Christopher Felleisen
 //
 //  Program #:     Eight
 //
-//  File Name:     Program8.java
+//  File Name:     Program8.Program8.java
 //
 //  Course:        ITSE 2317 Intermediate Java Programming
 //
@@ -14,7 +16,7 @@
 //
 //  Chapter:       21
 //
-//  Description:   Tests InfixToPostfixConverter
+//  Description:   Tests Program8.Program8.InfixToPostfixConverter
 //
 //********************************************************************
 public class Program8 {

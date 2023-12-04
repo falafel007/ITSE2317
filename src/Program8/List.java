@@ -1,10 +1,11 @@
+package Program8;
 //********************************************************************
 //
 //  Developer:     Textbook Authors
 //
 //  Program #:     Eight
 //
-//  File Name:     List.java
+//  File Name:     Program8.List.java
 //
 //  Course:        ITSE 2317 Intermediate Java Programming
 //
@@ -14,8 +15,8 @@
 //
 //  Chapter:       21
 //
-//  Description:   Fig. 21.3: List.java
-//                 ListNode and List class declarations.
+//  Description:   Fig. 21.3: Program8.List.java
+//                 Program8.ListNode and Program8.List class declarations.
 //
 //********************************************************************
 
@@ -27,18 +28,18 @@ import java.util.NoSuchElementException;
 // class to represent one node in a list
 class ListNode<E>
 {
-   // package access members; List can access these directly
+   // package access members; Program8.List can access these directly
    E data; // data for this node
    ListNode<E> nextNode; // reference to the next node in the list
 
-   // constructor creates a ListNode that refers to object
+   // constructor creates a Program8.ListNode that refers to object
    ListNode(E object)
    {
 	   this(object, null);
    }
 
-   // constructor creates ListNode that refers to the specified
-   // object and to the next ListNode
+   // constructor creates Program8.ListNode that refers to the specified
+   // object and to the next Program8.ListNode
    ListNode(E object, ListNode<E> node)
    {
       data = object;    
@@ -58,26 +59,26 @@ class ListNode<E>
    }
 } 
 
-// class List definition
+// class Program8.List definition
 public class List<E> implements java.util.List<E> {
    private ListNode<E> firstNode;
    private ListNode<E> lastNode; 
    private String name; // string like "list" used in printing
 
-   // constructor creates empty List with "list" as the name
+   // constructor creates empty Program8.List with "list" as the name
    public List()
    {
 	   this("list");
    }
 
-   // constructor creates an empty List with a name
+   // constructor creates an empty Program8.List with a name
    public List(String listName)
    {
       name = listName;
       firstNode = lastNode = null;
    } 
 
-   // insert item at front of List
+   // insert item at front of Program8.List
    public void insertAtFront(E insertItem)
    {
       if (isEmpty()) { // firstNode and lastNode refer to same object
@@ -88,7 +89,7 @@ public class List<E> implements java.util.List<E> {
       } 
    } 
 
-   // insert item at end of List
+   // insert item at end of Program8.List
    public void insertAtBack(E insertItem)
    {
       if (isEmpty()) { // firstNode and lastNode refer to same object
@@ -99,10 +100,10 @@ public class List<E> implements java.util.List<E> {
       } 
    } 
 
-   // remove first node from List
+   // remove first node from Program8.List
    public E removeFromFront() throws NoSuchElementException
    {
-      if (isEmpty()) // throw exception if List is empty
+      if (isEmpty()) // throw exception if Program8.List is empty
 	  { 
          throw new NoSuchElementException(name + " is empty");
       }
@@ -122,10 +123,10 @@ public class List<E> implements java.util.List<E> {
       return removedItem; // return removed node data
    } 
 
-   // remove last node from List
+   // remove last node from Program8.List
    public E removeFromBack() throws NoSuchElementException
    {
-      if (isEmpty()) // throw exception if List is empty
+      if (isEmpty()) // throw exception if Program8.List is empty
 	  { 
          throw new NoSuchElementException(name + " is empty");
       }

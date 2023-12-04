@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 8 Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/InfixToPostfixConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/Program8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701145459398</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Program 8 Complete">
+      <created>1701225424583</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1701225424583</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

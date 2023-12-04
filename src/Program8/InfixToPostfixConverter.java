@@ -1,3 +1,5 @@
+package Program8;
+
 import java.util.Map;
 
 //********************************************************************
@@ -6,7 +8,7 @@ import java.util.Map;
 //
 //  Program #:     Eight
 //
-//  File Name:     InfixToPostfixConverter.java
+//  File Name:     Program8.Program8.InfixToPostfixConverter.java
 //
 //  Course:        ITSE 2317 Intermediate Java Programming
 //
@@ -32,7 +34,7 @@ public class InfixToPostfixConverter {
     private final StringBuffer infix;
     private final StringBuffer postfix;
 
-    Stack<String> operator_stack = new Stack<>();
+    Stack<Object> operator_stack = new Stack<>();
 
     InfixToPostfixConverter(StringBuffer infix) {
         this.infix = infix;
@@ -78,7 +80,7 @@ public class InfixToPostfixConverter {
 
             else if (this.isOperator(current_character)) {
                 // pop operators that have equal or higher precedence append to postfix
-                while (precedence(current_character, this.operator_stack.peek())) {
+                while (precedence(current_character, (String) this.operator_stack.peek())) {
                     postfix.append(this.operator_stack.pop());
                     postfix.append(" ");
                 }
