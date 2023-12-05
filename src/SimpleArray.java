@@ -1,6 +1,27 @@
 // Fig. 23.8: SimpleArray.java
 // Class that manages an integer array to be shared by multiple
 // threads with synchronization.
+
+//********************************************************************
+//
+//  Developer:     Christopher Felleisen
+//
+//  Program #:     Nine
+//
+//  File Name:     SimpleArray.java
+//
+//  Course:        ITSE 2317 Intermediate Java Programming
+//
+//  Due Date:      12/05/2023
+//
+//  Instructor:    Fred Kumi
+//
+//  Chapter:       23
+//
+//  Description: Creates a simpleArray object
+//
+//********************************************************************
+
 import java.security.SecureRandom;
 import java.util.Arrays;
 
@@ -42,41 +63,25 @@ public class SimpleArray {
    }
 
    /*
-   Method add()
+   Method: getTotalArray
    Parameters: none
-   Return: void
-   Description: sets the element of the array at the writeIndex to a SecureRandom using generator attribute
+   Return long totalArray
+    Description: returns the value of totalArray attribute
     */
-   public synchronized void add() {
-
-      if (writeIndex < this.size) {
-         int position = writeIndex; // store the write index
-
-         // put value in the appropriate element
-         array[position] = generator.nextInt(1, 21);
-         this.totalArray += array[position];
-
-         // System.out.printf("%s wrote %2d to element %d.%n", Thread.currentThread().getName(), value, position);
-         ++writeIndex; // increment index of element to be written next
-         // System.out.printf("Next write index: %d%n", writeIndex);
-      }
-   }
-
-   // Method: getTotalArray
-   // Parameters: none
-   // Return long totalArray
-   // Description: returns the value of totalArray attribute
    public long getTotalArray() {
       return this.totalArray;
    }
 
-   // Method: setTotalArray
-   // Parameters: none
-   // Return: none
-   // Description: sets totalArray attribute
+   /*
+   Method: setTotalArray
+   Parameters: none
+   Return: none
+   Description: sets totalArray attribute
+    */
    private void setTotalArray(){
       this.totalArray = Arrays.stream(this.array).sum();
    }
+
 
    /*
    Method: getSize()
@@ -84,7 +89,6 @@ public class SimpleArray {
    Return: size of array
    Description: returns the size of the array
     */
-
    public int getSize() {
       return this.size;
    }

@@ -1,15 +1,6 @@
 // Fig. 23.7: Program9.java
 // Executing two Runnables to add elements to a shared SimpleArray.
 
-import java.security.SecureRandom;
-import java.text.NumberFormat;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Arrays;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeUnit;
-
 //********************************************************************
 //
 //  Developer:     Christopher Felleisen
@@ -26,35 +17,61 @@ import java.util.concurrent.TimeUnit;
 //
 //  Chapter:       23
 //
-//  Description:
+//  Description: Compares runtime of Multi- and Single- thread array operations
 //
 //********************************************************************
+
+import java.security.SecureRandom;
+import java.text.NumberFormat;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Arrays;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class Program9 {
 
    private static final int SIZE = 15000000; //Change the array size to 15,000,000.
-   private final int AVAILABLE_CORES = Runtime.getRuntime().availableProcessors();
+   final int AVAILABLE_CORES = Runtime.getRuntime().availableProcessors();
 
    public static void main(String[] arg) {
       Program9 test = new Program9();
       test.developerInfo();
 
+      /*
+      MultiThread Implementation
+       */
+
+      // execute the tasks with an ExecutorService
+      ExecutorService executorService = Executors.newFixedThreadPool(test.AVAILABLE_CORES);
+
       // Begin timing multithreaded
       Instant multi_threaded_array_start = Instant.now();
+
       // construct the shared object
       SimpleArray sharedSimpleArray = new SimpleArray(SIZE);
-      // execute the tasks with an ExecutorService
-      ExecutorService executorService = Executors.newCachedThreadPool();
       test.multiThreadArray(executorService, sharedSimpleArray);
-      executorService.shutdown();
+
+      // End timer and calculate elapsed time
       Instant multi_threaded_array_end = Instant.now();
       long multi_threaded_time = Duration.between(multi_threaded_array_start, multi_threaded_array_end).toMillis();
 
-      // execute the tasks with a single thread
-      Instant single_threaded_array_start = Instant.now();
-      long single_threaded_total = test.singleThreadArray();
-      Instant single_threaded_array_end = Instant.now();
-      long single_threaded_time = Duration.between(single_threaded_array_start, single_threaded_array_end).toMillis();
+      // Shutdown Executor
+      executorService.shutdown();
+
+      /*
+      Helper method implementation of multithreading
+      Does not work -- returns time, but reports sum = 0
+       */
+//      ExecutorService executorService = Executors.newCachedThreadPool();
+//      long[] multi_threaded_stats = test.multiThreadStats(executorService);
+//      executorService.shutdown();
+
+      /*
+      Single Thread Implementation
+       */
+      long[] single_threaded_stats = test.singleThreadStats();
 
       try {
          // wait 1 minute for both writers to finish executing
@@ -64,9 +81,11 @@ public class Program9 {
          if (tasksEnded) {
 
             System.out.printf("Multithreaded Array Total Sum: %,d%n", sharedSimpleArray.getTotalArray());
-            System.out.printf("Single-Threaded Array Total Sum: %,d%n", single_threaded_total);
+            //System.out.printf("Multithreaded Array Total Sum: %,d%n", multi_threaded_stats[0]);
+            System.out.printf("Single-Threaded Array Total Sum: %,d%n", single_threaded_stats[0]);
 
-            test.compareTimes(single_threaded_time, multi_threaded_time);
+            test.compareTimes(single_threaded_stats[1], multi_threaded_time);
+            //test.compareTimes(single_threaded_stats[1], multi_threaded_stats[1]);
 
          }   
          else {
@@ -93,6 +112,22 @@ public class Program9 {
       return Arrays.stream(a).sum();
 
    }
+   /*
+   Method: singleThreadStats
+   Parameters: none
+   Return: long[]
+   Description: returns long[], [0] is sum of array and [1] is time in milliseconds
+    */
+   public long[] singleThreadStats(){
+
+      Instant single_threaded_array_start = Instant.now();
+      long single_threaded_total = this.singleThreadArray();
+      Instant single_threaded_array_end = Instant.now();
+
+      long single_threaded_time = Duration.between(single_threaded_array_start, single_threaded_array_end).toMillis();
+
+      return new long[] {single_threaded_total, single_threaded_time};
+   }
 
 
    /*
@@ -113,10 +148,24 @@ public class Program9 {
 
    /*
    Method: multiThreadStats
-   Parameters:
+   Parameters: ExecutorService
    Return: array of statistics about multithreaded actions
    Description: returns array size 2 with i[0] as sum of sharedArray and i[1] as time elapsed
     */
+   public long[] multiThreadStats(ExecutorService executorService) {
+      // Begin timing multithreaded
+      Instant multi_threaded_array_start = Instant.now();
+      // construct the shared object
+      SimpleArray sharedSimpleArray = new SimpleArray(SIZE);
+      // execute the tasks with an ExecutorService
+
+      this.multiThreadArray(executorService, sharedSimpleArray);
+
+      Instant multi_threaded_array_end = Instant.now();
+      long multi_threaded_time = Duration.between(multi_threaded_array_start, multi_threaded_array_end).toMillis();
+
+      return new long[] {sharedSimpleArray.getTotalArray(), multi_threaded_time};
+   }
 
 
    /*

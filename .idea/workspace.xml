@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 8 Complete">
+    <list default="true" id="af1a8cbd-5222-4f32-9773-49233c8486de" name="Changes" comment="Program 9 InProgress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfixToPostfixConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/InfixToPostfixConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/Program8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program8/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +51,8 @@
       <recent name="$PROJECT_DIR$/src/ProgrammingExamples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/ProgrammingExamples" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Program2" />
     </key>
@@ -326,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701225424583</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Program 9 InProgress">
+      <created>1701664451208</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1701664451208</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Program 9 InProgress">
+      <created>1701664490406</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1701664490406</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +370,7 @@
     <MESSAGE value="Program 6 In Progress" />
     <MESSAGE value="Program 6 Complete" />
     <MESSAGE value="Program 8 Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program 8 Complete" />
+    <MESSAGE value="Program 9 InProgress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program 9 InProgress" />
   </component>
 </project>

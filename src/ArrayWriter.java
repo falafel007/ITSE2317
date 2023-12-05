@@ -1,5 +1,26 @@
 // Fig. 23.6: ArrayWriter.java
 // Adds integers to an array shared with other Runnables
+
+//********************************************************************
+//
+//  Developer:     Christopher Felleisen
+//
+//  Program #:     Nine
+//
+//  File Name:     ArrayWriter.java
+//
+//  Course:        ITSE 2317 Intermediate Java Programming
+//
+//  Due Date:      12/05/2023
+//
+//  Instructor:    Fred Kumi
+//
+//  Chapter:       23
+//
+//  Description: Implements Runnable to write values to an array
+//
+//********************************************************************
+
 import java.lang.Runnable;
 import java.security.SecureRandom;
 
