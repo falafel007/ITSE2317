@@ -31,6 +31,7 @@ public class SimpleArray {
    private int writeIndex = 0; // index of next element to be written
    public long totalArray;
    private final int size;
+   private long timeToWrite; // in milli seconds
 
 
    // construct a SimpleArray of a given size
@@ -81,6 +82,22 @@ public class SimpleArray {
    private void setTotalArray(){
       this.totalArray = Arrays.stream(this.array).sum();
    }
+
+   /*
+   Method: setTimeToWrite
+   Parameters: long
+   Return: void
+   Description: Sets time to write
+    */
+   public void setTimeToWrite(long timeToWrite) {this.timeToWrite = timeToWrite;}
+
+   /*
+  Method: getTimeToWrite
+  Parameters:
+  Return: long
+  Description: gets time to write
+   */
+   public long getTimeToWrite() {return this.timeToWrite;}
 
 
    /*
