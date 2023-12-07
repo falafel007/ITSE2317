@@ -37,9 +37,10 @@ public class Program9 {
       Program9 test = new Program9();
       test.developerInfo();
 
-      ExecutorService executorService = Executors.newSingleThreadExecutor();
+
       SimpleArray multi_threaded_array = test.multiThreadExecutor();
       SimpleArray single_threaded_array = test.singleThreadExecutor();
+      ExecutorService executorService = Executors.newSingleThreadExecutor();
       executorService.shutdown();
 
       try {
@@ -123,7 +124,7 @@ public class Program9 {
    public SimpleArray threadExecutor(ExecutorService executorService) {
 
       // construct the shared object
-      SimpleArray sharedSimpleArray = new SimpleArray(this.SIZE);
+      SimpleArray sharedSimpleArray = new SimpleArray(SIZE);
       executorService.execute(new ArrayWriter(sharedSimpleArray));
 
       return sharedSimpleArray;
